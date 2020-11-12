@@ -1,4 +1,4 @@
-# NameError
+# Handling NameError
 try:
     print(x)
 except:
@@ -6,7 +6,7 @@ except:
 finally:
     print("In here, we try to print an undeclared variable named \'x\'\n")
 
-# ModuleNotFoundError
+# Handling ModuleNotFoundError
 try:
     import x
 except:
@@ -14,7 +14,7 @@ except:
 finally:
     print("In here, we try to import an arbitrary module named \'x\'\n")
 
-# IndexError
+# Handling IndexError
 arr = [1, 2]
 try:
     print(arr[2])
@@ -23,7 +23,7 @@ except:
 finally:
     print("In here, we try to dereference the value at index out of bound of list\n")
 
-# TypeError
+# Handling TypeError
 try:
     print(3 + '3')
 except:
@@ -31,7 +31,7 @@ except:
 finally:
     print("In here, we try to add a number to string literal\n")
 
-#AttributeError
+# Handling AttributeError
 try:
     import numpy
     numpy.read(10)
@@ -40,7 +40,7 @@ except:
 finally:
     print("In here, we try to use an attribute named \'read\' with the numpy library which indeed doesn't exist\n")
 
-#FileNotFoundError
+# Handling FileNotFoundError
 try:
     f = open("x.txt", "r")
 except:
@@ -48,7 +48,7 @@ except:
 finally:
     print("In here, we try to open a file with no existence\n")
 
-#ZeroDivisionError
+# Handling ZeroDivisionError
 try:
     print(1 / 0)
 except:
